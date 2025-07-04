@@ -1,0 +1,8 @@
+---
+- name: Update web servers
+  hosts: all
+
+  tasks:
+    - name: test message
+      debug:
+        msg: "Hello World"
