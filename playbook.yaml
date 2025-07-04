@@ -1,8 +1,8 @@
 ---
-- name: Update web servers
+- name: Test playbook
   hosts: all
 
   tasks:
     - name: test message
       debug:
-        msg: "Hello World"
+        msg: "Hello World {{ message }}"
